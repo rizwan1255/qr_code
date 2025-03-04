@@ -31,7 +31,7 @@ class SplashScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(50.0),
             child: ElevatedButton(onPressed: (){
-              Navigator.pushReplacementNamed(context, "/home");
+              Navigator.pushNamed(context, "/home");
             },
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.black,

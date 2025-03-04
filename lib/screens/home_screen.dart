@@ -22,17 +22,23 @@ class HomeScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                ElevatedButton(onPressed: (){},
+                ElevatedButton(onPressed: (){
+                  Navigator.pushNamed(context, "/setting");
+                },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.black,
                   ),
                 child: Text("Setting",style: TextStyle(color: Colors.white),),),
-                ElevatedButton(onPressed: (){},
+                ElevatedButton(onPressed: (){
+                  Navigator.pushNamed(context, "/generate");
+                },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.black,
                   ),
                   child: Text("Generate",style: TextStyle(color: Colors.white),),),
-                ElevatedButton(onPressed: (){},
+                ElevatedButton(onPressed: (){
+                  Navigator.pushNamed(context, "/history");
+                },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.black,
                   ),
